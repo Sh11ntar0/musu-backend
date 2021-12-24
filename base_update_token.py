@@ -50,7 +50,7 @@ def get_authorize_code():
     logging.info('start.')
 
     url = f'{BASE_ENDPOINT}/1/oauth/authorize?response_type=code&client_id={CLIENT_ID}&' \
-          f'redirect_uri={BASE_SHOP_URL}&scope=read_users'
+          f'redirect_uri={BASE_SHOP_URL}&scope=read_items'
 
     options = webdriver.ChromeOptions()
     options.add_argument("--headless")
